@@ -43,6 +43,21 @@ responses = {
         ,
         {'parse_mode': ParseMode.HTML, 'disable_web_page_preview': True}
     ),
+    "motion_array": (
+        "<b>🌟 Quick Guide to Access Motion Array</b>\n"
+        "━━━━━━━━━━━━━━━━\n"
+        "<b>1:</b> 🔗 <b>Downloading Motion Array File</b>\n"
+        "   -  Type <code>/mot</code> followed by a Motion Array URL.\n"
+        "   -  Example: <code>/mot https://motionarray.com/stock-video/group-of-young-urban-men-holding-gun-bat-and-basketball-in-alley-2895091/</code>\n\n"
+        "<b>2:</b> 👑 <b>Pro Features</b>\n"
+        "   -  Plans Daily/Weekly/Monthly\n"
+        "   -  100 downloads per day.\n"
+        "   -  24x7 Downloading Service with No Downtime\n\n"
+        "<b>3:</b> 👑 <b>Buy Subscription</b>\n"
+        "   -  To Buy Motion Array subscription Contact to <a href='https://t.me/abirxdhackz'>Abir Arafat Chawdhury</a>"
+        ,
+        {'parse_mode': ParseMode.HTML, 'disable_web_page_preview': True}
+    ),
     "freepik": (
         "<b>🌟 Quick Guide to Access Freepik</b>\n"
         "━━━━━━━━━━━━━━━━\n"
@@ -131,7 +146,7 @@ responses = {
         {'parse_mode': ParseMode.HTML, 'disable_web_page_preview': True}
     ),
     "about_me": (
-        "<b>Name:</b> Smart Tool ⚙️\n"
+        "<b>Name:</b> Graphics Tool️⚙️\n"
         "<b>Version:</b> 3.0 (Beta Testing) 🛠\n\n"
         "<b>Development Team:</b>\n"
         "- <b>Creator:</b> <a href='https://t.me/abirxdhackz'>⏤͟͞〲ᗩᗷiᖇ 𓊈乂ᗪ𓊉 👨‍💻</a>\n"
@@ -180,7 +195,7 @@ async def handle_callback_query(client, callback_query):
         start_message = (
             f"<b>Hi {full_name}! Welcome to this bot</b>\n"
             "<b>━━━━━━━━━━━━━━━━━━━━━━━━━━</b>\n"
-            "<b><a href='https://t.me/abirxdhackz'>Graphics Tool️</a></b>: is the most complete Bot to help you with Graphics Resources, Effortless Downloads - Say goodbye to browsing hassles! Get your desired assets with a simple click. 💾\n"
+            "<b><a href='https://t.me/abirxdhackz'>Graphics Tool️⚙️</a></b>: is the most complete Bot to help you with Graphics Resources, Effortless Downloads - Say goodbye to browsing hassles! Get your desired assets with a simple click. 💾\n"
             "<b>━━━━━━━━━━━━━━━━━━━━━━━━━━</b>\n"
             "<b>Don't forget to <a href='https://t.me/ModVipRM'>join</a> for updates!</b>"
         )
@@ -189,7 +204,7 @@ async def handle_callback_query(client, callback_query):
             start_message,
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("⚙️ Main Menu", callback_data="main_menu")],
+                [InlineKeyboardButton("💾 Main Menu", callback_data="main_menu")],
                 [InlineKeyboardButton("🔄 Updates", url="https://t.me/ModVipRM"),
                  InlineKeyboardButton("ℹ️ About Me", callback_data="about_me")]
             ]),
@@ -257,7 +272,7 @@ async def send_start_message(client, message):
     start_message = (
         f"<b>Hi {full_name}! Welcome to this bot</b>\n"
         "<b>━━━━━━━━━━━━━━━━━━━━━━━━━━</b>\n"
-        "<b><a href='https://t.me/abirxdhackz'>Graphics Tool️</a></b>: is the most complete Bot to help you with Graphics Resources, Effortless Downloads - Say goodbye to browsing hassles! Get your desired assets with a simple click. 💾\n"
+        "<b><a href='https://t.me/abirxdhackz'>Graphics Tool️⚙️</a></b>: is the most complete Bot to help you with Graphics Resources, Effortless Downloads - Say goodbye to browsing hassles! Get your desired assets with a simple click. 💾\n"
         "<b>━━━━━━━━━━━━━━━━━━━━━━━━━━</b>\n"
         "<b>Don't forget to <a href='https://t.me/ModVipRM'>join</a> for updates!</b>"
     )
@@ -266,7 +281,7 @@ async def send_start_message(client, message):
         start_message,
         parse_mode=ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("⚙️ Main Menu", callback_data="main_menu")],
+            [InlineKeyboardButton("💾 Main Menu", callback_data="main_menu")],
             [InlineKeyboardButton("🔄 Updates", url="https://t.me/ModVipRM"),
              InlineKeyboardButton("ℹ️ About Me", callback_data="about_me")]
         ]),
