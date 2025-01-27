@@ -4,6 +4,7 @@ from pyrogram.enums import ParseMode
 # Define the inline keyboards for the menus
 main_menu_keyboard = InlineKeyboardMarkup([
     [InlineKeyboardButton("Envato Elements", callback_data="envato_elements"), InlineKeyboardButton("Motion Array", callback_data="motion_array")],
+    [InlineKeyboardButton("Freepik", callback_data="freepik"), InlineKeyboardButton("Unsplash", callback_data="unsplash")],
     [InlineKeyboardButton("Free Access", callback_data="free_access"), InlineKeyboardButton("Paid Access", callback_data="paid_access")],
     [InlineKeyboardButton("For Reseller", callback_data="for_reseller")],
     [InlineKeyboardButton("Close ❌", callback_data="close")]
@@ -154,7 +155,7 @@ async def handle_callback_query(client, callback_query):
     elif call.data == "close":
         await call.message.delete()
     elif call.data == "start_message":
-        full_name = f"{call.message.from_user.first_name} {call.message.from_user.last_name}" if call.message.from_user.last_name else call.message.from_user first_name
+        full_name = f"{call.message.from_user.first_name} {call.message.from_user.last_name}" if call.message.from_user.last_name else call.message.from_user.first_name
 
         # Main welcome message
         start_message = (
