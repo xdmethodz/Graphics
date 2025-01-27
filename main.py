@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
 from pyrogram.enums import ParseMode
-
+from privacy.privacy import setup_privacy_handler
 
 # Replace these with your actual API details
 API_ID = "28239710"  # Replace with your API ID
@@ -25,6 +25,8 @@ main_menu_keyboard = InlineKeyboardMarkup([
     [InlineKeyboardButton("For Reseller", callback_data="for_reseller")]
 ])
 
+
+setup_privacy_handler(app)
 # Responses dictionary for different commands
 responses = {
     "envato_elements": (
