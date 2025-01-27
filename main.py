@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
 from pyrogram.enums import ParseMode
-from callback.callback_handlers import handle_callback_query  # Import the function from the subscript
+
 
 # Replace these with your actual API details
 API_ID = "28239710"  # Replace with your API ID
